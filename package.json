@@ -1,0 +1,56 @@
+{
+  "name": "base64hub",
+  "version": "1.0.0",
+  "description": "Base64 encode, decode and validate: a tiny CLI (b64) and library. Standard and URL-safe, data URIs, no dependencies.",
+  "keywords": [
+    "base64",
+    "base64url",
+    "base64-encode",
+    "base64-decode",
+    "encode",
+    "decode",
+    "validate",
+    "url-safe",
+    "data-uri",
+    "rfc4648",
+    "cli",
+    "command-line",
+    "zero-dependency"
+  ],
+  "homepage": "https://base64hub.com/npm/",
+  "bugs": {
+    "url": "https://github.com/base64hub-com/base64hub-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/base64hub-com/base64hub-node.git"
+  },
+  "license": "MIT",
+  "author": "base64hub <g@base64hub.com> (https://base64hub.com)",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "b64": "bin/b64.js",
+    "base64hub": "bin/b64.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "bin/b64.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test"
+  }
+}
